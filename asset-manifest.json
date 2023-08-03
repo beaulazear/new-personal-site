@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/new-personal-site/static/css/main.55e67377.css",
+    "main.js": "/new-personal-site/static/js/main.e154585d.js",
+    "static/js/787.f2415b58.chunk.js": "/new-personal-site/static/js/787.f2415b58.chunk.js",
+    "static/media/BeauAndRalph.JPG": "/new-personal-site/static/media/BeauAndRalph.9b8ecdd39db9b85bd93a.JPG",
+    "static/media/BeauAndRu.JPG": "/new-personal-site/static/media/BeauAndRu.002b2051b6900cd44ba7.JPG",
+    "static/media/RiverWithBrick.jpeg": "/new-personal-site/static/media/RiverWithBrick.47dc90bb53d489ab7d7e.jpeg",
+    "static/media/WorkoutGif.gif": "/new-personal-site/static/media/WorkoutGif.5387b690cf0eb31a5ab0.gif",
+    "static/media/JavaLookinCute.jpeg": "/new-personal-site/static/media/JavaLookinCute.fd01dd7a6a13e9eb2cf9.jpeg",
+    "static/media/MooseOnVerandah.jpeg": "/new-personal-site/static/media/MooseOnVerandah.9470cd44cba681628cdc.jpeg",
+    "static/media/BeauAndHornbill.jpeg": "/new-personal-site/static/media/BeauAndHornbill.c713d8dde304fb1ce39a.jpeg",
+    "static/media/Ruth.jpeg": "/new-personal-site/static/media/Ruth.97731a0957123da32200.jpeg",
+    "static/media/ResumePDF.pdf": "/new-personal-site/static/media/ResumePDF.587b72e1574a3613c92d.pdf",
+    "index.html": "/new-personal-site/index.html",
+    "main.55e67377.css.map": "/new-personal-site/static/css/main.55e67377.css.map",
+    "main.e154585d.js.map": "/new-personal-site/static/js/main.e154585d.js.map",
+    "787.f2415b58.chunk.js.map": "/new-personal-site/static/js/787.f2415b58.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.55e67377.css",
+    "static/js/main.e154585d.js"
+  ]
+}
