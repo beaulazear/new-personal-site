@@ -30,7 +30,6 @@ const paragraphStyles = {
   lineHeight: '1.6',
   color: '#666',
   marginBottom: '16px',
-  textAlign: 'left'
 };
 
 const imageWrapper = {
