@@ -32,7 +32,46 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+/* personal code starts below */
+
+.navigation {
+  display: flex;
+  width: 100%;
+  /* background-color: #f0f0f0; */
+}
+
+.navButtons {
+  text-align: center;
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background-color: #ffc09f;
+  /* Light peachy color */
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 10px;
+  /* Rounded corners */
+  margin: 5px;
+  /* Add some spacing between buttons */
+}
+
+.navButtons:hover {
+  background-color: #fcaa84;
+  /* Slightly darker peachy color on hover */
+}
+
+/* Add a different color for the active button (when it's selected) */
+.navButtons.active {
+  background-color: #fe7742;
+  /* Bright orange color for the active button */
 }
