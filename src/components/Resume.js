@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import ResumePDF from "../images/ResumePDF.pdf"
 
 const headingStyles = {
@@ -39,8 +39,19 @@ const jobDescriptionStyles = {
 };
 
 const Resume = () => {
+
+    const topElement = useRef(null);
+
+    function scrollToTop() {
+        topElement?.current?.scrollIntoView({ behavior: 'smooth' });
+    };
+  
+    useEffect(() => {
+      scrollToTop()
+    },[])
+
     return (
-        <div style={resumeStyles}>
+        <div style={resumeStyles} ref={topElement}>
             <h2 style={headingStyles}>Resume</h2>
             <a target="blank" href={ResumePDF}><button class="button2">PDF Version</button></a>
             <br /><br />

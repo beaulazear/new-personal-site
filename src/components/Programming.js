@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import WorkoutGif from "../images/WorkoutGif.gif"
 
 const welcomeMessageStyles = {
@@ -88,8 +88,19 @@ const modernButtonStyle = {
 };
 
 const Programming = () => {
+
+  const topElement = useRef(null);
+
+  function scrollToTop() {
+      topElement?.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  useEffect(() => {
+    scrollToTop()
+  },[])
+
   return (
-    <div style={welcomeMessageStyles}>
+    <div style={welcomeMessageStyles} ref={topElement}>
       <h2 style={headingStyles}>Computer Programming</h2>
       <p style={paragraphStyles}>Welcome to my programming portfolio! I'm a web developer proficient with JavaScript, Ruby on Rails, React, HTML, and CSS. With a background in the animal care industry, I've been combining my love for animals with my coding skills to create projects for my dog walking business.
         <br></br><br></br>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { NavLink } from "react-router-dom";
 import BeauAndRu from '../images/BeauAndRu.JPG'
 import Ruth from "../images/Ruth.jpeg"
@@ -79,9 +79,20 @@ const pStyles = {
 };
 
 const AnimalCareInfo = () => {
+
+  const topElement = useRef(null);
+
+  function scrollToTop() {
+      topElement?.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  useEffect(() => {
+    scrollToTop()
+  },[])
+
   return (
-    <div style={welcomeMessageStyles}>
-      <h2 style={headingStyles}>Animal Care Information</h2>
+    <div style={welcomeMessageStyles} ref={topElement}>
+      <h2 style={headingStyles}>Animal Care</h2>
       <div style={imageWrapper}>
         <img style={image} src={BeauAndRu} alt="Beau with two dogs" />
       </div>

@@ -7,7 +7,7 @@ export default function PageNavLinks() {
     return (
         <div className="navigation">
             <NavLink to="/" className="navButtons">Home</NavLink>
-            <NavLink to="/animal_care" className="navButtons">Animal Care</NavLink>
+            <NavLink to="/animal_care" className="navButtons">Pet Care</NavLink>
             <NavLink to="/programming" className="navButtons">Programming</NavLink>
             <NavLink to="/resume" className="navButtons">Resume</NavLink>
         </div>
