@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
+import PageNavLinks from './PageNavLinks';
 import BeauAndHornbill from "../images/BeauAndHornbill.jpeg"
 
 const welcomeMessageStyles = {
@@ -48,6 +49,7 @@ const image = {
 const Home = () => {
   return (
     <div style={welcomeMessageStyles}>
+      <PageNavLinks />
       <h2 style={headingStyles}>Christian Beau Lazear</h2>
       <div style={imageWrapper}>
         <img src={BeauAndHornbill} alt="Beau with a dog named Ru" style={image} />

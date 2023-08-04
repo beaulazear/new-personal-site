@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from 'react';
+import PageNavLinks from './PageNavLinks';
 import WorkoutGif from "../images/WorkoutGif.gif"
 
 const welcomeMessageStyles = {
@@ -101,6 +102,7 @@ const Programming = () => {
 
   return (
     <div style={welcomeMessageStyles} ref={topElement}>
+      <PageNavLinks />
       <h2 style={headingStyles}>Computer Programming</h2>
       <p style={paragraphStyles}>Welcome to my programming portfolio! I'm a web developer proficient with JavaScript, Ruby on Rails, React, HTML, and CSS. With a background in the animal care industry, I've been combining my love for animals with my coding skills to create projects for my dog walking business.
         <br></br><br></br>

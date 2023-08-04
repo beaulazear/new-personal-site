@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import PageNavLinks from './PageNavLinks';
 import ResumePDF from "../images/ResumePDF.pdf"
 
 const headingStyles = {
@@ -9,14 +10,17 @@ const headingStyles = {
 
 // new style for resume container
 
-const resumeStyles = {
-    fontFamily: 'Arial, sans-serif',
+const welcomeMessageStyles = {
+    fontFamily: 'Helvetica, sans-serif',
     maxWidth: '600px',
     margin: '0 auto',
-    padding: '20px',
-    // backgroundColor: '#ffe2d1',
-    borderRadius: '10px',
-};
+    paddingBottom: '40px',
+    paddingRight: '40px',
+    paddingLeft: '40px',
+    // backgroundColor: '#f2f2f2',
+    borderRadius: '8px',
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+  };
 
 const sectionTitleStyles = {
     fontSize: '24px',
@@ -51,7 +55,8 @@ const Resume = () => {
     },[])
 
     return (
-        <div style={resumeStyles} ref={topElement}>
+        <div style={welcomeMessageStyles} ref={topElement}>
+            <PageNavLinks />
             <h2 style={headingStyles}>Resume</h2>
             <a target="blank" href={ResumePDF}><button class="button2">PDF Version</button></a>
             <br /><br />

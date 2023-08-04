@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { NavLink } from "react-router-dom";
+import PageNavLinks from './PageNavLinks';
 import BeauAndRu from '../images/BeauAndRu.JPG'
 import Ruth from "../images/Ruth.jpeg"
 import BeauAndRalph from "../images/BeauAndRalph.JPG"
@@ -92,6 +93,7 @@ const AnimalCareInfo = () => {
 
   return (
     <div style={welcomeMessageStyles} ref={topElement}>
+      <PageNavLinks />
       <h2 style={headingStyles}>Animal Care</h2>
       <div style={imageWrapper}>
         <img style={image} src={BeauAndRu} alt="Beau with two dogs" />
