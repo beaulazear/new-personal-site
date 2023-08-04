@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from "react-router-dom";
 import BeauAndRu from '../images/BeauAndRu.JPG'
 import Ruth from "../images/Ruth.jpeg"
 import BeauAndRalph from "../images/BeauAndRalph.JPG"
@@ -87,7 +88,7 @@ const AnimalCareInfo = () => {
       <h2>Your pets best friend!</h2>
       <p style={paragraphStyles}> Animal caretaker with over eight years of professional caretaking experience. Experience including zookeeping (Prospect Park Zoo, Wildlife Conservation Society), veterinary assisting, rescue rehabilitation (ASPCA), general pet care & enrichment. Empathic, patient, and if it doesn't go without saying, an animal lover at heart.
         <br /><br />
-        Let's get your pet in on the fun! Contact me with any pet service inquiries, and we can get started with a free introduction walk. Visit <a href="/resume">resume page</a> for contact info.
+        Let's get your pet in on the fun! Contact me with any pet service inquiries, and we can get started with a free introduction walk. Visit <NavLink to="/resume">resume page</NavLink> for contact info.
       </p>
       <h2 style={headingStyles}>Services and Pricing</h2>
       <div style={serviceCardStyles}>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from "react-router-dom";
 import BeauAndHornbill from "../images/BeauAndHornbill.jpeg"
 
 const welcomeMessageStyles = {
@@ -55,13 +56,13 @@ const Home = () => {
       <p style={paragraphStyles}> Hi, I'm Beau! I am based in Brooklyn NYC. I've had an eventful professional life involving multiple direct animal care positions, administrative & hospitality roles (within plant-based / cruelty-free establishments), and more. I've grown within these roles, and completed several educational programs / projects throughout myexperience. I am currently maintaining my own business - providing exceptional animal care to clients across Brooklyn NYC. I am self-taught in basic computer programming, and I am currently in an educational program to expand my understanding even further. Proficiency in HTML, Javascript, React, CSS, Ruby & Rails, and more as I continue to learn.
       </p>
       <h2>What can I do for you?</h2>
-      <p style={paragraphStyles}> I am available Monday-Friday, between 10 am and 5 pm, for animal care appointments. My service area is Carroll Gardens, Cobble Hill, Gowanus, and Brooklyn Heights. Weekend dog walks, evening/early morning walks, overnight pet sitting, and more available upon special request! I help connect clients with other independent contractors for services I cannot complete (due to location, schedule, pet's needs, etc...). Visit the <a href="/animal_care">Animal Care</a> page for more information.
+      <p style={paragraphStyles}> I am available Monday-Friday, between 10 am and 5 pm, for animal care appointments. My service area is Carroll Gardens, Cobble Hill, Gowanus, and Brooklyn Heights. Weekend dog walks, evening/early morning walks, overnight pet sitting, and more available upon special request! I help connect clients with other independent contractors for services I cannot complete (due to location, schedule, pet's needs, etc...). Visit the <NavLink to="/animal_care">Animal Care</NavLink> page for more information.
         <br />
         <br />
-        I am available for freelance computer programming work. I can help with your personal websites, application ideas, etc... Competent with Javascript, HTML, CSS, Ruby, and more. Visit the <a href="/programming">Programming</a> page to see previous projects.
+        I am available for freelance computer programming work. I can help with your personal websites, application ideas, etc... Competent with Javascript, HTML, CSS, Ruby, and more. Visit the <NavLink to="/programming">Programming</NavLink> page to see previous projects.
         <br />
         <br />
-        Visit <a href="/resume">Resume</a> page for contact info.
+        Visit <NavLink to="/resume">Resume</NavLink> page for contact info.
       </p>
     </div>
   );
