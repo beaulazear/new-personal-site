@@ -6,6 +6,7 @@ import AnimalCarePage from './components/AnimalCareInfo';
 import Resume from './components/Resume';
 import Programming from './components/Programming';
 import { Navigate } from "react-router-dom";
+import { useEffect } from 'react';
 
 function App() {
   useEffect(() => {
