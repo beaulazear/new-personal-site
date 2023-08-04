@@ -5,14 +5,16 @@ import Home from './components/Home';
 import AnimalCarePage from './components/AnimalCareInfo';
 import Resume from './components/Resume';
 import Programming from './components/Programming';
-import { Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useEffect } from 'react';
 
 function App() {
-  useEffect(() => {
-    Navigate( to='/');
-}, [])
 
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    navigate('/')
+  }, [])
 
   return (
     <div>
