@@ -5,16 +5,22 @@ import Home from './components/Home';
 import AnimalCarePage from './components/AnimalCareInfo';
 import Resume from './components/Resume';
 import Programming from './components/Programming';
+import { Navigate } from "react-router-dom";
 
 function App() {
+  useEffect(() => {
+    Navigate( to='/');
+}, [])
+
+
   return (
     <div>
       <PageNavLinks />
       <Routes>
-        <Route path="new-personal-site/" element={<Home />} />
-        <Route path="new-personal-site/animal_care" element={<AnimalCarePage />} />
-        <Route path="new-personal-site/resume" element={<Resume />} />
-        <Route path="new-personal-site/programming" element={<Programming />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/animal_care" element={<AnimalCarePage />} />
+        <Route path="/resume" element={<Resume />} />
+        <Route path="/programming" element={<Programming />} />
       </Routes>
     </div>
   );
