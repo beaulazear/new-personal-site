@@ -1,6 +1,8 @@
 import React, { useRef, useEffect } from 'react';
 import PageNavLinks from './PageNavLinks';
-import WorkoutGif from "../images/WorkoutGif.gif"
+import WorkoutGif from "../images/WorkoutGif.gif";
+import PetSitGif2 from "../images/PetSitGif2.gif";
+import PetSitGif3 from "../images/PetSitGif3.gif"
 
 const welcomeMessageStyles = {
   fontFamily: 'Helvetica, sans-serif',
@@ -93,12 +95,12 @@ const Programming = () => {
   const topElement = useRef(null);
 
   function scrollToTop() {
-      topElement?.current?.scrollIntoView({ behavior: 'smooth' });
+    topElement?.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
   useEffect(() => {
     scrollToTop()
-  },[])
+  }, [])
 
   return (
     <div style={welcomeMessageStyles} ref={topElement}>
@@ -108,6 +110,20 @@ const Programming = () => {
         <br></br><br></br>
         I'm still exploring the world of web development, and my portfolio showcases my journey as I learn and grow. From front-end to back-end, I enjoy building websites that are functional and visually appealing. Take a look at my projects, and you'll see how I've transformed my ideas into real, user-friendly web applications. Let's embark on this coding adventure together!</p>
       <h2 style={headingStyles}>Projects</h2>
+      <div style={serviceCardStyles}>
+        <h2 style={h2Styles}>Pet Sitting Application</h2>
+        <h3 style={h3Styles}>React, Ruby on Rails, HTML, CSS</h3>
+        <p style={pStyles}>Full stack application built with Ruby on Rails, and React. Users can create both a petsitter and client account. Clients can contact pet sitters and book pet sit requests. Application is not yet deployed.</p>
+        <div style={gifContainerStyle}>
+          <img src={PetSitGif2} alt="gif of this project" style={gifImageStyle} />
+        </div>
+        <br />
+        <div style={gifContainerStyle}>
+          <img src={PetSitGif3} alt="gif of this project" style={gifImageStyle} />
+        </div>
+        <br />
+        <a style={modernButtonStyle} target="_blank" href="https://github.com/beaulazear/pet-sitting-app.git">Github Repository Link</a>
+      </div>
       <div style={serviceCardStyles}>
         <h2 style={h2Styles}>Exercise/Workout Log</h2>
         <h3 style={h3Styles}>React, Ruby (ActiveRecord & Sinatra), HTML, CSS</h3>
