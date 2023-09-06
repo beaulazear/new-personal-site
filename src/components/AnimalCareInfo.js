@@ -162,7 +162,7 @@ const AnimalCareInfo = () => {
         <p style={pStyles}>
           I can feed your snake, parrot, iguana... pretty much anything! I used to work as a zookeeper, so I have
           plenty of experience. I will clean enclosures, change water dishes, make sure heat lamps are running, and
-          complete any other special requests. I'm aware at how delicate some of these creatures are, and will ensure
+          complete any other special requests. I'm aware of how delicate some of these creatures are, and will ensure
           the safety of your animal during your whole vacation!
           <br />
           <br />
@@ -176,7 +176,7 @@ const AnimalCareInfo = () => {
           With my animal rescue / veterinary experience, I have been there for a lot of euthanasia. I know this can be
           a very tough moment for an animal lover! I would like to offer my company free of charge... To be with you
           during the euthanasia visit, so you do not have to go through it alone. I am also more than happy to spend
-          some time with you afterwards. It is always helpful to have someone to talk to :)
+          some time with you afterwards. It is always helpful to have someone to talk to.
           <br />
           <br />
           "To live in hearts we leave behind is not to die" -Thomas Campbell
