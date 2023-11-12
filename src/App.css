@@ -48,11 +48,12 @@
 .navButtons {
   text-align: center;
   flex: 1;
-  padding: 4px;
+  padding: 0px;
   border: none;
   background-color: #ffc09f;
   color: #fff;
   font-size: 14px;
+  line-height: 36px;
   cursor: pointer;
   transition: background-color 0.3s;
   font-weight: bold;
