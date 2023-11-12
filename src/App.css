@@ -48,7 +48,7 @@
 .navButtons {
   text-align: center;
   flex: 1;
-  padding: 8px;
+  padding: 4px;
   border: none;
   background-color: #ffc09f;
   color: #fff;
@@ -57,8 +57,8 @@
   transition: background-color 0.3s;
   font-weight: bold;
   text-decoration: none;
-  border-radius: 8px;
-  margin: 4px;
+  border-radius: 4px;
+  margin: 2px;
 }
 
 .navButtons:hover {

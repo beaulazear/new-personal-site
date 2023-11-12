@@ -108,8 +108,16 @@ const Programming = () => {
       <h2 style={headingStyles}>Computer Programming</h2>
       <p style={paragraphStyles}>Welcome to my programming portfolio! I'm a web developer proficient with JavaScript, Ruby on Rails, React, HTML, and CSS. With a background in the animal care industry, I've been combining my love for animals with my coding skills to create projects for my dog walking business.
         <br></br><br></br>
-        I'm still exploring the world of web development, and my portfolio showcases my journey as I learn and grow. From front-end to back-end, I enjoy building websites that are functional and visually appealing. Take a look at my projects, and you'll see how I've transformed my ideas into real, user-friendly web applications. Let's embark on this coding adventure together!</p>
+        I'm still exploring the world of web development, and my portfolio showcases my journey as I learn and grow. From front-end to back-end, I enjoy building websites that are functional and visually appealing. Take a look at my projects to visualize my progress.</p>
       <h2 style={headingStyles}>Projects</h2>
+      <div style={serviceCardStyles}>
+        <h2 style={h2Styles}>Aria Design Consultants</h2>
+        <h3 style={h3Styles}>React, HTML, CSS, Bootstrap</h3>
+        <p style={pStyles}>Single page application built for a client for marketing purposes using primarily React. Displays recent projects and some other company content. I use a few design libraries, Bootstrap, Ant, and Styled Components.</p>
+        <a style={modernButtonStyle} target="_blank" href="https://beaulazear.github.io/michael-personal-site/">Deployed Website Link</a>
+        <br />
+        <a style={modernButtonStyle} target="_blank" href="https://github.com/beaulazear/michael-personal-site.git">Github Repository Link</a>
+      </div>
       <div style={serviceCardStyles}>
         <h2 style={h2Styles}>Pet Sitting Application</h2>
         <h3 style={h3Styles}>React, Ruby on Rails, HTML, CSS</h3>
