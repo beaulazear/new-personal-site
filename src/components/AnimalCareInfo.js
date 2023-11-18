@@ -99,7 +99,7 @@ const AnimalCareInfo = () => {
       <div style={imageWrapper}>
         <img style={image} src={BeauAndRu} alt="Beau with two dogs" />
       </div>
-      <h2>Your pets best friend!</h2>
+      <h2>Your pet's best friend!</h2>
       <p style={paragraphStyles}> Animal caretaker with over eight years of professional caretaking experience. Experience including zookeeping (Prospect Park Zoo, Wildlife Conservation Society), veterinary assisting, rescue rehabilitation (ASPCA), general pet care & enrichment. Empathic, patient, and if it doesn't go without saying, an animal lover at heart.
         <br /><br />
         Let's get your pet in on the fun! Contact me with any pet service inquiries, and we can get started with a free introduction walk. Visit <NavLink to="/resume">resume page</NavLink> for contact info.
