@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import PageNavLinks from './PageNavLinks';
-import ResumePDF from "../images/ResumePDF.pdf"
+import Resume2023Dec from "../images/Resume2023Dec.pdf"
 
 const headingStyles = {
     fontSize: '30px',
@@ -58,7 +58,7 @@ const Resume = () => {
         <div style={welcomeMessageStyles} ref={topElement}>
             <PageNavLinks />
             <h2 style={headingStyles}>Resume</h2>
-            <a target="blank" href={ResumePDF}><button class="button2">PDF Version</button></a>
+            <a target="blank" href={Resume2023Dec}><button class="button2">PDF Version</button></a>
             <br /><br />
             <h3 style={jobTitleStyles}>Beau Lazear<br />
                 beaulazear@gmail.com<br />
@@ -128,9 +128,9 @@ const Resume = () => {
             <h2 style={jobTitleStyles}>Education</h2>
             <p style={jobDescriptionStyles}>
                 - High school diploma from East Knox High School<br />
+                - Flatiron School Software Development Program 2023 Graduate 
                 - Real estate license from the New York Real Estate Institute<br />
                 - Continuing education credits from Prospect Park Zoo (Wildlife Conservation Society)<br />
-                - Currently enrolled in the Flatiron School's software development program
             </p>
         </div>
 
