@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.887941fd.css",
-    "main.js": "/static/js/main.b38cac8f.js",
+    "main.js": "/static/js/main.3cba19fb.js",
     "static/js/787.f2415b58.chunk.js": "/static/js/787.f2415b58.chunk.js",
     "static/media/PetSitGif2.gif": "/static/media/PetSitGif2.94300283548e28b330a4.gif",
     "static/media/BeauAndRalph.JPG": "/static/media/BeauAndRalph.9b8ecdd39db9b85bd93a.JPG",
@@ -13,14 +13,14 @@
     "static/media/MooseOnVerandah.jpeg": "/static/media/MooseOnVerandah.9470cd44cba681628cdc.jpeg",
     "static/media/BeauAndHornbill.jpeg": "/static/media/BeauAndHornbill.c713d8dde304fb1ce39a.jpeg",
     "static/media/Ruth.jpeg": "/static/media/Ruth.97731a0957123da32200.jpeg",
-    "static/media/ResumePDF.pdf": "/static/media/ResumePDF.c1171c69f1b054d4c4a6.pdf",
+    "static/media/Resume2023Dec.pdf": "/static/media/Resume2023Dec.1053c46c00a30aef20bb.pdf",
     "index.html": "/index.html",
     "main.887941fd.css.map": "/static/css/main.887941fd.css.map",
-    "main.b38cac8f.js.map": "/static/js/main.b38cac8f.js.map",
+    "main.3cba19fb.js.map": "/static/js/main.3cba19fb.js.map",
     "787.f2415b58.chunk.js.map": "/static/js/787.f2415b58.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.887941fd.css",
-    "static/js/main.b38cac8f.js"
+    "static/js/main.3cba19fb.js"
   ]
 }
