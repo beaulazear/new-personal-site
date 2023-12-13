@@ -67,9 +67,9 @@ const Resume = () => {
             </h3>
             <br />
             <h1 style={sectionTitleStyles}>Animal Care Experience</h1>
-            <h2 style={jobTitleStyles}>Freelance Animal Care, self employed (2019-Present)</h2>
+            <h2 style={jobTitleStyles}>Freelance Animal Care, self-employed (2019-Present)</h2>
             <p style={jobDescriptionStyles}>
-                - Built and maintained informational website for incoming clients<br />
+                - Built and maintained an informational website for incoming clients<br />
                 - Built a network of animal care clients and subcontracted additional staff<br />
                 - Continually expanded client base via personal networking, customer referral, and social media marketing<br />
                 - Maintained & fulfilled a schedule for services to be provided<br />
@@ -81,9 +81,9 @@ const Resume = () => {
                 - Daily husbandry, medical attention, enrichment, and cleaning/maintenance for all dogs & cats located
                 in my section<br />
                 - Properly filled out medical paperwork to keep the veterinary team on the same page<br />
-                - Assisted veterinarians during medical procedures, completed more basic medical procedures myself<br />
-                - Employed at a period of high employee turnover, took initiative & quickly became a lead vet assistant<br />
-                - Worked with communications team for events based around donor outreach<br />
+                - Assisted veterinarians during medical procedures, and completed more basic medical procedures myself<br />
+                - Employed during a period of high employee turnover, took initiative & quickly became a lead vet assistant<br />
+                - Worked with the communications team for events based on donor outreach<br />
                 - Handled dog alongside CEO for a communications event on Good Morning America,{' '}
                 <a href="https://twitter.com/gma/status/1186651005129150464?s=27&t=ghSiPaRjXnr4PxD451NsoA" target="_blank">
                     click here for video
