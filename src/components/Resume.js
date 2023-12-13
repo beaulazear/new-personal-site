@@ -128,7 +128,7 @@ const Resume = () => {
             <h2 style={jobTitleStyles}>Education</h2>
             <p style={jobDescriptionStyles}>
                 - High school diploma from East Knox High School<br />
-                - Flatiron School Software Development Program 2023 Graduate 
+                - Flatiron School Software Development Program 2023 Graduate<br />
                 - Real estate license from the New York Real Estate Institute<br />
                 - Continuing education credits from Prospect Park Zoo (Wildlife Conservation Society)<br />
             </p>
