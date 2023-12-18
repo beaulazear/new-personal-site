@@ -71,7 +71,7 @@ const headingStyles = {
 };
 
 const ServiceCard = styled.div`
-  background-color: #ffe2d1;
+  background-color: #ffc09f;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
