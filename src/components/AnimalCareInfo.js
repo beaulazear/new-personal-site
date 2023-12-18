@@ -22,11 +22,10 @@ const StyledContainer = styled.div`
     width: 100%;
   }
 
-  /* Add these styles for larger screens */
   @media (min-width: 801px) {
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 1300px; /* Adjust the max-width based on your design */
+    max-width: 1300px;
   }
 `;
 
@@ -40,7 +39,7 @@ const StyledServiceCard = styled.div`
   margin-bottom: 20px;
 
   @media (max-width: 800px) {
-    width: 100%; /* Take full width in the column layout */
+    width: 100%;
     box-sizing: border-box;
   }
 
@@ -57,7 +56,6 @@ const StyledServiceCard = styled.div`
 
 const welcomeMessageStyles = {
   fontFamily: 'Helvetica, sans-serif',
-  // maxWidth: '1300px',
   margin: '0 auto',
   paddingBottom: '20px',
   paddingRight: '20px',

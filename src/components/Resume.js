@@ -8,16 +8,12 @@ const headingStyles = {
     color: '#333',
 };
 
-// new style for resume container
-
 const welcomeMessageStyles = {
     fontFamily: 'Helvetica, sans-serif',
-    // maxWidth: '1300px',
     margin: '0 auto',
     paddingBottom: '20px',
     paddingRight: '20px',
     paddingLeft: '20px',
-    // backgroundColor: '#f2f2f2',
     borderRadius: '8px',
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
     textAlign: 'left',
