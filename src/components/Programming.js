@@ -1,4 +1,6 @@
 import React, { useRef, useEffect } from 'react';
+import { NavLink } from "react-router-dom";
+import styled from 'styled-components';
 import PageNavLinks from './PageNavLinks';
 import WorkoutGif from "../images/WorkoutGif.gif";
 import PetSitGif2 from "../images/PetSitGif2.gif";
@@ -6,7 +8,7 @@ import PetSitGif3 from "../images/PetSitGif3.gif"
 
 const welcomeMessageStyles = {
   fontFamily: 'Helvetica, sans-serif',
-  maxWidth: '600px',
+  // maxWidth: '1300px',
   margin: '0 auto',
   paddingBottom: '20px',
   paddingRight: '20px',
@@ -17,29 +19,70 @@ const welcomeMessageStyles = {
   textAlign: 'center',
 };
 
+const StyledIntroduction = styled.div`
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+
+  @media (max-width: 800px) {
+    max-width: 600px;
+  }
+`;
+
+const Heading = styled.h2`
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #333;
+
+  @media (max-width: 800px) {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+  }
+`;
+
+const Paragraph = styled.p`
+  font-size: 1.2em;
+  color: #777;
+  line-height: 1.6;
+  text-align: left;
+
+  @media (max-width: 800px) {
+    font-size: 1em;
+    color: #777;
+    line-height: 1.6;
+  }
+`;
+
+const StyledLink = styled(NavLink)`
+  color: #3498db;
+  text-decoration: underline;
+
+  @media (max-width: 800px) {
+    color: #3498db;
+    text-decoration: underline;
+  }
+`;
+
 const headingStyles = {
   fontSize: '30px',
   marginBottom: '20px',
   color: '#333',
 };
 
-const paragraphStyles = {
-  fontSize: '16px',
-  lineHeight: '1.6',
-  color: '#666',
-  marginBottom: '16px',
-  textAlign: 'left'
-};
+const ServiceCard = styled.div`
+  background-color: #ffe2d1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 
-// above is for intro, below starts for programming cards
-
-const serviceCardStyles = {
-  backgroundColor: '#ffe2d1',
-  padding: '20px',
-  borderRadius: '8px',
-  boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
-  marginBottom: '20px',
-};
+  @media (min-width: 800px) {
+    width: 800px;
+    margin: 0 auto; /* Center the component horizontally */
+    margin-bottom: 20px;
+  }
+`;
 
 const h2Styles = {
   color: '#333',
@@ -105,20 +148,26 @@ const Programming = () => {
   return (
     <div style={welcomeMessageStyles} ref={topElement}>
       <PageNavLinks />
-      <h2 style={headingStyles}>Computer Programming</h2>
-      <p style={paragraphStyles}>Welcome to my programming portfolio! I'm a web developer proficient with JavaScript, Ruby on Rails, React, HTML, and CSS. With a background in the animal care industry, I've been combining my love for animals with my coding skills to create projects for my dog walking business.
-        <br></br><br></br>
-        I'm still exploring the world of web development, and my portfolio showcases my journey as I learn and grow. From front-end to back-end, I enjoy building websites that are functional and visually appealing. Take a look at my projects to visualize my progress.</p>
+      <StyledIntroduction>
+        <Heading>Computer Programming</Heading>
+        <Paragraph>
+          Welcome to my programming portfolio! I'm a web developer proficient with JavaScript, Ruby on Rails, React, HTML, and CSS. With a background in the animal care industry, I've been combining my love for animals with my coding skills to create projects for my dog walking business.
+          <br /><br />
+          I'm still exploring the world of web development, and my portfolio showcases my journey as I learn and grow. From front-end to back-end, I enjoy building websites that are functional and visually appealing. Take a look at my projects to visualize my progress.
+          <br /><br />
+          Looking for help on your next project? Contact me with any inquiries, and we can disuss how I can help you out! Visit <StyledLink to="/resume">resume page</StyledLink> for contact info.
+        </Paragraph>
+      </StyledIntroduction>
       <h2 style={headingStyles}>Projects</h2>
-      <div style={serviceCardStyles}>
+      <ServiceCard>
         <h2 style={h2Styles}>Aria Design Consultants</h2>
         <h3 style={h3Styles}>React, HTML, CSS, Bootstrap</h3>
         <p style={pStyles}>Single page application built for a client for marketing purposes using primarily React. Displays recent projects and some other company content. I use a few design libraries, Bootstrap, Ant, and Styled Components.</p>
         <a style={modernButtonStyle} target="_blank" href="https://beaulazear.github.io/michael-personal-site/">Deployed Website Link</a>
         <br />
         <a style={modernButtonStyle} target="_blank" href="https://github.com/beaulazear/michael-personal-site.git">Github Repository Link</a>
-      </div>
-      <div style={serviceCardStyles}>
+      </ServiceCard>
+      <ServiceCard>
         <h2 style={h2Styles}>Pet Sitting Application</h2>
         <h3 style={h3Styles}>React, Ruby on Rails, HTML, CSS</h3>
         <p style={pStyles}>Full stack application built with Ruby on Rails, and React. Users can create both a petsitter and client account. Clients can contact pet sitters and book pet sit requests. Application is not yet deployed.</p>
@@ -131,8 +180,8 @@ const Programming = () => {
         </div>
         <br />
         <a style={modernButtonStyle} target="_blank" href="https://github.com/beaulazear/pet-sitting-app.git">Github Repository Link</a>
-      </div>
-      <div style={serviceCardStyles}>
+      </ServiceCard>
+      <ServiceCard>
         <h2 style={h2Styles}>Exercise/Workout Log</h2>
         <h3 style={h3Styles}>React, Ruby (ActiveRecord & Sinatra), HTML, CSS</h3>
         <p style={pStyles}>Single page application made with Ruby, React, Active Record, and Sinatra. Front end and database are in seperate repositories - clone both and run locally. Users can create their own exercises and add workout data to view trends over time.</p>
@@ -143,23 +192,23 @@ const Programming = () => {
         <a style={modernButtonStyle} target="_blank" href="https://github.com/beaulazear/react-sinatra-project">Front End Repository Link</a>
         <br />
         <a style={modernButtonStyle} target="_blank" href="https://github.com/beaulazear/phase-3-sinatra-react-project">Database Repository Link</a>
-      </div>
-      <div style={serviceCardStyles}>
+      </ServiceCard>
+      <ServiceCard>
         <h2 style={h2Styles}>www.beaulazear.com</h2>
         <h3 style={h3Styles}>React, Javascript, HTML, CSS</h3>
         <p style={pStyles}>The website you are curerntly on! Single page application made with React for marketing my business / providing information to new clients.</p>
         <a style={modernButtonStyle} target="_blank" href="https://beaulazear.com/">Deployed Website Link</a>
         <br />
         <a style={modernButtonStyle} target="_blank" href="https://github.com/beaulazear/beaus-website">Github Repository Link</a>
-      </div>
-      <div style={serviceCardStyles}>
+      </ServiceCard>
+      <ServiceCard>
         <h2 style={h2Styles}>Personal Marketing Website</h2>
         <h3 style={h3Styles}>React, Javascript, HTML, CSS</h3>
         <p style={pStyles}>Single page application made with React for information/resume sharing & personal marketing.</p>
         <a style={modernButtonStyle} target="_blank" href="https://beaulazear.github.io/nadine/#/">Deployed Website Link</a>
         <br />
         <a style={modernButtonStyle} target="_blank" href="https://github.com/beaulazear/nadine">Github Repository Link</a>
-      </div>
+      </ServiceCard>
     </div>
   );
 };
