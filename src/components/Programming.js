@@ -21,7 +21,7 @@ const welcomeMessageStyles = {
 const StyledIntroduction = styled.div`
   max-width: 1000px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 6px;
 
   @media (max-width: 800px) {
     max-width: 600px;

@@ -111,7 +111,7 @@ const pStyles = {
 const StyledIntroduction = styled.div`
   max-width: 750px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 6px;
 
   @media (max-width: 800px) {
     max-width: 600px;
@@ -172,9 +172,9 @@ const AnimalCareInfo = () => {
       <StyledIntroduction>
         <Heading>Animal Care</Heading>
         <Paragraph>
-          Hello! I am an animal caretaker with over eight years of professional caretaking experience. Experience includes zookeeping (Prospect Park Zoo, Wildlife Conservation Society), veterinary assisting, rescue rehabilitation (ASPCA), general pet care & enrichment. Empathic, patient, and, if it doesn't go without saying, an animal lover at heart.
+          Hello! I am an animal caretaker with over eight years of professional caretaking experience. Experience includes zookeeping (Prospect Park Zoo, Wildlife Conservation Society), veterinary assisting, rescue rehabilitation (ASPCA), general pet care & enrichment. You can find my offered services, pricing, & client testimonials below.
           <br /><br />
-          Let's get your pet in on the fun! Contact me with any pet service inquiries, and we can get started with a free introduction walk. Visit <StyledLink to="/resume">resume page</StyledLink> for contact info.
+          Visit <StyledLink to="/resume">resume page</StyledLink> for contact info.
         </Paragraph>
       </StyledIntroduction>
       <h2 style={headingStyles}>Services and Pricing</h2>
