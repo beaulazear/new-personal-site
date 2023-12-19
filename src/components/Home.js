@@ -6,7 +6,7 @@ import BeauAndHornbill from "../images/BeauAndHornbill.jpeg"
 
 const welcomeMessageStyles = {
   fontFamily: 'Helvetica, sans-serif',
-  // maxWidth: '1300px',
+  backgroundColor: '#fff2eb',
   margin: '0 auto',
   paddingBottom: '20px',
   paddingRight: '20px',
@@ -17,7 +17,7 @@ const welcomeMessageStyles = {
 };
 
 const StyledIntroduction = styled.div`
-  max-width: 1000px;
+  max-width: 750px;
   margin: 0 auto;
   padding: 20px;
 
@@ -54,11 +54,16 @@ const SubHeading = styled.h2`
 `;
 
 const Paragraph = styled.p`
-  font-size: 20px;
+  font-size: 1.2em;
+  color: #777;
   line-height: 1.6;
-  color: #666;
-  margin-bottom: 16px;
   text-align: left;
+
+  @media (max-width: 800px) {
+    font-size: 1em;
+    color: #777;
+    line-height: 1.6;
+  }
 `;
 
 const imageWrapper = {
@@ -86,13 +91,13 @@ const Home = () => {
         <img src={BeauAndHornbill} alt="Beau with a dog named Ru" style={image} />
       </div>
       <StyledIntroduction>
-        <Heading>About Me</Heading>
+        <SubHeading>About Me</SubHeading>
         <Paragraph>
         Hi, I'm Beau! I am based in Brooklyn NYC. I've had an eventful professional life involving multiple direct animal care positions, administrative & hospitality roles (within plant-based / cruelty-free establishments), and more. I've grown within these roles, and completed several educational programs / projects throughout my experience. I am currently maintaining my own business - providing exceptional animal care to clients across Brooklyn NYC. I am self-taught in basic computer programming, and I am a graduate from the Flatiron School's software development program. Proficiency in HTML, Javascript, React, CSS, Ruby & Rails, and more as I continue to learn.
         </Paragraph>
       </StyledIntroduction>
       <StyledIntroduction>
-        <Heading>What can I do for you?</Heading>
+        <SubHeading>What can I do for you?</SubHeading>
         <Paragraph>
         I am available Monday-Friday, between 10 am and 5 pm, for animal care appointments. My service area is Carroll Gardens, Cobble Hill, Gowanus, and Brooklyn Heights. Weekend dog walks, evening/early morning walks, overnight pet sitting, and more available upon special request! I help connect clients with other independent contractors for services I cannot complete (due to location, schedule, pet's needs, etc...). Visit the <StyledLink to="/animal_care">Animal Care</StyledLink> page for more information.
           <br /><br />

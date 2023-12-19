@@ -8,12 +8,11 @@ import PetSitGif3 from "../images/PetSitGif3.gif"
 
 const welcomeMessageStyles = {
   fontFamily: 'Helvetica, sans-serif',
-  // maxWidth: '1300px',
+  backgroundColor: '#fff2eb',
   margin: '0 auto',
   paddingBottom: '20px',
   paddingRight: '20px',
   paddingLeft: '20px',
-  // backgroundColor: '#f2f2f2',
   borderRadius: '8px',
   boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
   textAlign: 'center',

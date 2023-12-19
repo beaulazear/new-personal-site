@@ -55,6 +55,7 @@ const StyledServiceCard = styled.div`
 `;
 
 const welcomeMessageStyles = {
+  backgroundColor: '#fff2eb',
   fontFamily: 'Helvetica, sans-serif',
   margin: '0 auto',
   paddingBottom: '20px',
@@ -108,7 +109,7 @@ const pStyles = {
 };
 
 const StyledIntroduction = styled.div`
-  max-width: 1000px;
+  max-width: 750px;
   margin: 0 auto;
   padding: 20px;
 
