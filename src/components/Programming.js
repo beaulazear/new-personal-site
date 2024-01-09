@@ -3,8 +3,9 @@ import { NavLink } from "react-router-dom";
 import styled from 'styled-components';
 import PageNavLinks from './PageNavLinks';
 import WorkoutGif from "../images/WorkoutGif.gif";
-import PetSitGif2 from "../images/PetSitGif2.gif";
-import PetSitGif3 from "../images/PetSitGif3.gif"
+import PetSitGif3 from "../images/PetSitGif3.gif";
+import DogWalkGif from "../images/DogWalkGif.gif";
+import Headshot from "../images/Headshot.jpeg";
 
 const welcomeMessageStyles = {
   fontFamily: 'Helvetica, sans-serif',
@@ -119,6 +120,7 @@ const gifImageStyle = {
 
 const modernButtonStyle = {
   display: 'inline-block',
+  width: '200px',
   padding: '12px 20px',
   margin: '10px',
   border: 'none',
@@ -167,18 +169,30 @@ const Programming = () => {
         <a style={modernButtonStyle} target="_blank" href="https://github.com/beaulazear/michael-personal-site.git">Github Repository Link</a>
       </ServiceCard>
       <ServiceCard>
+        <h2 style={h2Styles}>Dog Walking Application</h2>
+        <h3 style={h3Styles}>React, Ruby on Rails, HTML, CSS</h3>
+        <p style={pStyles}>Full stack application built with Ruby on Rails, and React. Uses AWS S3 for file storage. Users can create an account, upload and store dog data, create appointments, view today's schedule, and view / edit invoices as walks are completed. Utilized React Bootstrap for a unique style.</p>
+        <br />
+        <div style={gifContainerStyle}>
+          <img src={DogWalkGif} alt="gif of this project" style={gifImageStyle} />
+        </div>
+        <br />
+        <a style={modernButtonStyle} target="_blank" href="https://github.com/beaulazear/dog-walking-app.git">Github Repository Link</a>
+        <br />
+        <a style={modernButtonStyle} target="_blank" href="https://www.youtube.com/watch?v=VaLX3_oZhGc&feature=youtu.be">Video Demo</a>
+      </ServiceCard>
+      <ServiceCard>
         <h2 style={h2Styles}>Pet Sitting Application</h2>
         <h3 style={h3Styles}>React, Ruby on Rails, HTML, CSS</h3>
         <p style={pStyles}>Full stack application built with Ruby on Rails, and React. Users can create both a petsitter and client account. Clients can contact pet sitters and book pet sit requests. Application is not yet deployed.</p>
-        <div style={gifContainerStyle}>
-          <img src={PetSitGif2} alt="gif of this project" style={gifImageStyle} />
-        </div>
         <br />
         <div style={gifContainerStyle}>
           <img src={PetSitGif3} alt="gif of this project" style={gifImageStyle} />
         </div>
         <br />
         <a style={modernButtonStyle} target="_blank" href="https://github.com/beaulazear/pet-sitting-app.git">Github Repository Link</a>
+        <br />
+        <a style={modernButtonStyle} target="_blank" href="https://www.youtube.com/watch?v=n1pzEzciu1E&feature=youtu.be">Video Demo</a>
       </ServiceCard>
       <ServiceCard>
         <h2 style={h2Styles}>Exercise/Workout Log</h2>

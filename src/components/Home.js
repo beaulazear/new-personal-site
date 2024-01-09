@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from "react-router-dom";
 import styled from 'styled-components';
 import PageNavLinks from './PageNavLinks';
-import BeauAndHornbill from "../images/BeauAndHornbill.jpeg"
+import Headshot from "../images/Headshot.jpeg"
 
 const welcomeMessageStyles = {
   fontFamily: 'Helvetica, sans-serif',
@@ -67,20 +67,22 @@ const Paragraph = styled.p`
 `;
 
 const imageWrapper = {
-  width: '220px',
-  height: '220px',
+  width: '250px',
+  height: '300px', // Increase the height to show more of the top
   margin: '0 auto',
-  borderRadius: '50%',
   overflow: 'hidden',
-  boxShadow: '0 2px 4px rgba(0, 0, 0, 0.2)'
+  borderRadius: '8px', // Add a slight border radius for a soft look
+  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', // A slightly larger and softer shadow
 };
 
 const image = {
   width: '100%',
   height: '100%',
   objectFit: 'cover',
-  borderRadius: '50%'
+  borderRadius: '8px', // Match the border radius with the container
 };
+
+
 
 const Home = () => {
   return (
@@ -88,7 +90,7 @@ const Home = () => {
       <PageNavLinks />
       <Heading>Christian Beau Lazear</Heading>
       <div style={imageWrapper}>
-        <img src={BeauAndHornbill} alt="Beau with a dog named Ru" style={image} />
+        <img src={Headshot} alt="Beau with a dog named Ru" style={image} />
       </div>
       <StyledIntroduction>
         <SubHeading>About Me</SubHeading>
