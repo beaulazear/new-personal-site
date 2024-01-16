@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import PageNavLinks from './PageNavLinks';
-import Resume from "../images/Resume.pdf"
+import ResumePDF from "../images/ResumePDF.pdf"
 
 const headingStyles = {
     fontSize: '30px',
@@ -55,7 +55,7 @@ const Resume = () => {
         <div style={welcomeMessageStyles} ref={topElement}>
             <PageNavLinks />
             <h2 style={headingStyles}>Resume</h2>
-            <a target="blank" href={Resume}><button class="button2">PDF Version</button></a>
+            <a target="blank" href={ResumePDF}><button class="button2">PDF Version</button></a>
             <br /><br />
             <h3 style={jobTitleStyles}>Beau Lazear<br />
                 beaulazear@gmail.com<br />
