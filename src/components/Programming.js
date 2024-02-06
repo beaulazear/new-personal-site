@@ -217,7 +217,7 @@ const Programming = () => {
       <ServiceCard>
         <h2 style={h2Styles}>Personal Marketing Website</h2>
         <h3 style={h3Styles}>React, Javascript, HTML, CSS</h3>
-        <p style={pStyles}>Single page application made with React for information/resume sharing & personal marketing.</p>
+        <p style={pStyles}>Single page application made with React for information/resume sharing & personal marketing. Utilized email.js for contact functionality.</p>
         <a style={modernButtonStyle} target="_blank" href="https://beaulazear.github.io/nadine/#/">Deployed Website Link</a>
         <br />
         <a style={modernButtonStyle} target="_blank" href="https://github.com/beaulazear/nadine">Github Repository Link</a>
