@@ -22,9 +22,7 @@ const StyledIntroduction = styled.div`
   margin: 0 auto;
   padding: 6px;
 
-  @media (max-width: 800px) {
-    max-width: 600px;
-  }
+
 `;
 
 const StyledLink = styled(NavLink)`

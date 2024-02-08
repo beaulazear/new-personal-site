@@ -10,15 +10,16 @@ const StyledContactContainer = styled(Container)`
   max-width: 750px;
   margin: 0 auto;
   padding: 20px;
+  max-width: 750px;
 
-  @media (max-width: 800px) {
-    max-width: 600px;
+  @media (max-width: 750px) {
+    max-width: 750px;
   }
 `;
 
 const StyledFormContainer = styled.form`
   width: 100%;
-  max-width: 600px;
+  max-width: 750px;
   padding: 10px;
   background-color: #ffc09f;
   border-radius: 8px;
@@ -33,6 +34,10 @@ const StyledLabel = styled.label`
   display: block;
   color: #333;
   text-align: left;
+
+  @media (min-width: 600px) {
+    margin-left: 28px;
+  }
 `;
 
 const StyledInput = styled.input`
