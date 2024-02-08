@@ -173,8 +173,6 @@ const AnimalCareInfo = () => {
         <Heading>Animal Care</Heading>
         <Paragraph>
           Hello! I am an animal caretaker with over eight years of professional caretaking experience. Experience includes zookeeping (Prospect Park Zoo, Wildlife Conservation Society), veterinary assisting, rescue rehabilitation (ASPCA), general pet care & enrichment. You can find my offered services, pricing, & client testimonials below.
-          <br /><br />
-          Visit <StyledLink to="/resume">resume page</StyledLink> for contact info.
         </Paragraph>
       </StyledIntroduction>
       <h2 style={headingStyles}>Services and Pricing</h2>

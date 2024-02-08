@@ -20,7 +20,7 @@ const StyledFormContainer = styled.form`
   width: 100%;
   max-width: 600px;
   padding: 20px;
-  background-color: #fff2eb;
+  background-color: #ffc09f;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
@@ -29,13 +29,14 @@ const StyledFormContainer = styled.form`
 const StyledLabel = styled.label`
   font-size: 16px;
   margin-bottom: 8px;
+  margin-left: 20px;
   display: block;
   color: #333;
   text-align: left;
 `;
 
 const StyledInput = styled.input`
-  width: 100%;
+  width: 90%;
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
@@ -43,7 +44,7 @@ const StyledInput = styled.input`
 `;
 
 const StyledTextarea = styled.textarea`
-  width: 100%;
+  width: 90%;
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
@@ -117,7 +118,7 @@ export default function Contact() {
                 <StyledInput placeholder='Your name' type="text" name="from_name" />
 
                 <StyledLabel>Email</StyledLabel>
-                <StyledInput placeholder='Your email address I should respond too' type="email" name="from_email" />
+                <StyledInput placeholder='Your email address' type="email" name="from_email" />
 
                 <StyledLabel>How can I help you?</StyledLabel>
                 <StyledTextarea placeholder='Brief description of your inquiry' name="message" />

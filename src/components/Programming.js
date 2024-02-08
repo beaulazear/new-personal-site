@@ -5,7 +5,6 @@ import PageNavLinks from './PageNavLinks';
 import WorkoutGif from "../images/WorkoutGif.gif";
 import PetSitGif3 from "../images/PetSitGif3.gif";
 import DogWalkGif from "../images/DogWalkGif.gif";
-import Headshot from "../images/Headshot.jpeg";
 
 const welcomeMessageStyles = {
   fontFamily: 'Helvetica, sans-serif',
@@ -150,16 +149,35 @@ const Programming = () => {
     <div style={welcomeMessageStyles} ref={topElement}>
       <PageNavLinks />
       <StyledIntroduction>
-        <Heading>Computer Programming</Heading>
+        <Heading>Software Development</Heading>
         <Paragraph>
-          Welcome to my programming portfolio! I'm a web developer proficient with JavaScript, Ruby on Rails, React, HTML, and CSS. With a background in the animal care industry, I've been combining my love for animals with my coding skills to create projects for my dog walking business.
-          <br /><br />
-          I'm still exploring the world of web development, and my portfolio showcases my journey as I learn and grow. From front-end to back-end, I enjoy building websites that are functional and visually appealing. Take a look at my projects to visualize my progress.
-          <br /><br />
-          Looking for help on your next project? Contact me with any inquiries, and we can disuss how I can help you out! Visit <StyledLink to="/resume">resume page</StyledLink> for contact info.
+          Welcome to my programming portfolio! I'm a web developer proficient with JavaScript, Ruby on Rails, React, HTML, and CSS. With a background in the animal care industry, I've been combining my love for animals with my coding skills to create projects for my dog walking business. I'm still exploring the world of web development, and my portfolio showcases my journey as I learn and grow. Take a look at my projects to visualize my progress.
         </Paragraph>
       </StyledIntroduction>
       <h2 style={headingStyles}>Projects</h2>
+      <ServiceCard>
+        <h2 style={h2Styles}>Dog Walking Application</h2>
+        <h3 style={h3Styles}>React, Ruby on Rails, HTML, CSS</h3>
+        <p style={pStyles}>Full stack application built with Ruby on Rails, and React. Uses AWS S3 for file storage. Utilized React Bootstrap & styled components for a unique style. Users can create an account, upload and store dog data, create appointments, view today's schedule, and view / edit invoices as walks are completed.</p>
+        <br />
+        <div style={gifContainerStyle}>
+          <img src={DogWalkGif} alt="gif of this project" style={gifImageStyle} />
+        </div>
+        <br />
+        <a style={modernButtonStyle} target="_blank" href="https://dog-walking-app.onrender.com">Deployed Website Link</a>
+        <br />
+        <a style={modernButtonStyle} target="_blank" href="https://github.com/beaulazear/dog-walking-app.git">Github Repository Link</a>
+        <br />
+        <a style={modernButtonStyle} target="_blank" href="https://www.youtube.com/watch?v=VaLX3_oZhGc&feature=youtu.be">Video Demo</a>
+      </ServiceCard>
+      <ServiceCard>
+        <h2 style={h2Styles}>www.beaulazear.com</h2>
+        <h3 style={h3Styles}>React, Javascript, HTML, CSS</h3>
+        <p style={pStyles}>The website you are curerntly on! Single page application made with React and styled components. Email.js implemented for client inquiries.Made for marketing my business / providing information to new clients.</p>
+        <a style={modernButtonStyle} target="_blank" href="https://beaulazear.com/">Deployed Website Link</a>
+        <br />
+        <a style={modernButtonStyle} target="_blank" href="https://github.com/beaulazear/beaus-website">Github Repository Link</a>
+      </ServiceCard>
       <ServiceCard>
         <h2 style={h2Styles}>Aria Design Consultants</h2>
         <h3 style={h3Styles}>React, HTML, CSS, Bootstrap</h3>
@@ -169,17 +187,12 @@ const Programming = () => {
         <a style={modernButtonStyle} target="_blank" href="https://github.com/beaulazear/michael-personal-site.git">Github Repository Link</a>
       </ServiceCard>
       <ServiceCard>
-        <h2 style={h2Styles}>Dog Walking Application</h2>
-        <h3 style={h3Styles}>React, Ruby on Rails, HTML, CSS</h3>
-        <p style={pStyles}>Full stack application built with Ruby on Rails, and React. Uses AWS S3 for file storage. Users can create an account, upload and store dog data, create appointments, view today's schedule, and view / edit invoices as walks are completed. Utilized React Bootstrap for a unique style.</p>
+        <h2 style={h2Styles}>Personal Marketing Website</h2>
+        <h3 style={h3Styles}>React, Javascript, HTML, CSS</h3>
+        <p style={pStyles}>Single page application made with React for information/resume sharing & personal marketing. Utilized email.js for contact functionality.</p>
+        <a style={modernButtonStyle} target="_blank" href="https://beaulazear.github.io/nadine/#/">Deployed Website Link</a>
         <br />
-        <div style={gifContainerStyle}>
-          <img src={DogWalkGif} alt="gif of this project" style={gifImageStyle} />
-        </div>
-        <br />
-        <a style={modernButtonStyle} target="_blank" href="https://github.com/beaulazear/dog-walking-app.git">Github Repository Link</a>
-        <br />
-        <a style={modernButtonStyle} target="_blank" href="https://www.youtube.com/watch?v=VaLX3_oZhGc&feature=youtu.be">Video Demo</a>
+        <a style={modernButtonStyle} target="_blank" href="https://github.com/beaulazear/nadine">Github Repository Link</a>
       </ServiceCard>
       <ServiceCard>
         <h2 style={h2Styles}>Pet Sitting Application</h2>
@@ -205,22 +218,6 @@ const Programming = () => {
         <a style={modernButtonStyle} target="_blank" href="https://github.com/beaulazear/react-sinatra-project">Front End Repository Link</a>
         <br />
         <a style={modernButtonStyle} target="_blank" href="https://github.com/beaulazear/phase-3-sinatra-react-project">Database Repository Link</a>
-      </ServiceCard>
-      <ServiceCard>
-        <h2 style={h2Styles}>www.beaulazear.com</h2>
-        <h3 style={h3Styles}>React, Javascript, HTML, CSS</h3>
-        <p style={pStyles}>The website you are curerntly on! Single page application made with React for marketing my business / providing information to new clients.</p>
-        <a style={modernButtonStyle} target="_blank" href="https://beaulazear.com/">Deployed Website Link</a>
-        <br />
-        <a style={modernButtonStyle} target="_blank" href="https://github.com/beaulazear/beaus-website">Github Repository Link</a>
-      </ServiceCard>
-      <ServiceCard>
-        <h2 style={h2Styles}>Personal Marketing Website</h2>
-        <h3 style={h3Styles}>React, Javascript, HTML, CSS</h3>
-        <p style={pStyles}>Single page application made with React for information/resume sharing & personal marketing. Utilized email.js for contact functionality.</p>
-        <a style={modernButtonStyle} target="_blank" href="https://beaulazear.github.io/nadine/#/">Deployed Website Link</a>
-        <br />
-        <a style={modernButtonStyle} target="_blank" href="https://github.com/beaulazear/nadine">Github Repository Link</a>
       </ServiceCard>
     </div>
   );
