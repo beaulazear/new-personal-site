@@ -19,7 +19,7 @@ const StyledContactContainer = styled(Container)`
 const StyledFormContainer = styled.form`
   width: 100%;
   max-width: 600px;
-  padding: 20px;
+  padding: 10px;
   background-color: #ffc09f;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -29,7 +29,7 @@ const StyledFormContainer = styled.form`
 const StyledLabel = styled.label`
   font-size: 16px;
   margin-bottom: 8px;
-  margin-left: 20px;
+  margin-left: 18px;
   display: block;
   color: #333;
   text-align: left;
