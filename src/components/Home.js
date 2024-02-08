@@ -2,7 +2,8 @@ import React from 'react';
 import { NavLink } from "react-router-dom";
 import styled from 'styled-components';
 import PageNavLinks from './PageNavLinks';
-import Headshot from "../images/Headshot.jpeg"
+import Headshot from "../images/Headshot.jpeg";
+import Contact from './Contact';
 
 const welcomeMessageStyles = {
   fontFamily: 'Helvetica, sans-serif',
@@ -104,10 +105,9 @@ const Home = () => {
         I am available Monday-Friday, between 10 am and 5 pm, for animal care appointments. My service area is Carroll Gardens, Cobble Hill, Gowanus, and Brooklyn Heights. Weekend dog walks, evening/early morning walks, overnight pet sitting, and more available upon special request! I help connect clients with other independent contractors for services I cannot complete (due to location, schedule, pet's needs, etc...). Visit the <StyledLink to="/animal_care">Animal Care</StyledLink> page for more information.
           <br /><br />
           I am available for freelance computer programming work. I can help with your personal websites, application ideas, etc... Competent with Javascript, HTML, CSS, Ruby, and more. Visit the <StyledLink to="/programming">Programming</StyledLink> page to see previous projects.
-          <br /><br />
-          Visit the <StyledLink to="/resume">Resume Page</StyledLink> for contact info.
         </Paragraph>
       </StyledIntroduction>
+      <Contact />
     </div>
   );
 };
