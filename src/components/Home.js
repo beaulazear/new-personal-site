@@ -91,8 +91,6 @@ const Image = styled.img`
   }
 `;
 
-
-
 const Home = () => {
   return (
     <div style={welcomeMessageStyles}>

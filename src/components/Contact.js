@@ -10,48 +10,37 @@ const StyledContactContainer = styled(Container)`
   max-width: 750px;
   margin: 0 auto;
   padding: 20px;
-  max-width: 750px;
-
-  @media (max-width: 750px) {
-    max-width: 750px;
-  }
 `;
 
 const StyledFormContainer = styled.form`
   width: 100%;
   max-width: 750px;
-  padding: 10px;
+  padding: 20px;
   background-color: #ffc09f;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
 `;
 
 const StyledLabel = styled.label`
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 8px;
-  margin-left: 18px;
-  display: block;
   color: #333;
   text-align: left;
-
-  @media (min-width: 600px) {
-    margin-left: 28px;
-  }
+  display: block;
 `;
 
 const StyledInput = styled.input`
-  width: 90%;
+  width: calc(100% - 20px);
   padding: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
 `;
 
 const StyledTextarea = styled.textarea`
-  width: 90%;
+  width: calc(100% - 20px);
   padding: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
 `;
@@ -59,11 +48,12 @@ const StyledTextarea = styled.textarea`
 const StyledSubmitButton = styled.input`
   background-color: #007bff;
   color: #fff;
-  padding: 10px 20px;
+  padding: 12px 24px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 18px;
+  transition: background-color 0.3s ease;
 
   &:hover {
     background-color: #0056b3;
@@ -71,65 +61,54 @@ const StyledSubmitButton = styled.input`
 `;
 
 const SubHeading = styled.h2`
-  font-size: 30px;
+  font-size: 36px;
   margin-bottom: 20px;
   color: #333;
-
-  @media (min-width: 800px) {
-    text-align: center;
-  }
 `;
 
 const Paragraph = styled.p`
   font-size: 1.2em;
   color: #777;
   line-height: 1.6;
-  text-align: center;
-
-  @media (max-width: 800px) {
-    font-size: 1em;
-    color: #777;
-    line-height: 1.6;
-  }
 `;
 
 export default function Contact() {
-    const form = useRef();
+  const form = useRef();
 
-    const sendEmail = (e) => {
-        e.preventDefault();
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-        emailjs
-            .sendForm('service_kqz5x4o', 'template_3ba6d27', form.current, '11CxjbisIoTlyftVb')
-            .then(
-                (result) => {
-                    console.log(result.text);
-                    alert('Form submitted successfully!');
-                    form.current.reset(); // Reset the form
-                },
-                (error) => {
-                    console.log(error.text);
-                    alert('Failed to submit the form. Please try again.');
-                }
-            );
-    };
+    emailjs
+      .sendForm('service_kqz5x4o', 'template_3ba6d27', form.current, '11CxjbisIoTlyftVb')
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert('Form submitted successfully!');
+          form.current.reset(); // Reset the form
+        },
+        (error) => {
+          console.log(error.text);
+          alert('Failed to submit the form. Please try again.');
+        }
+      );
+  };
 
-    return (
-        <StyledContactContainer>
-            <StyledFormContainer ref={form} onSubmit={sendEmail}>
-                <SubHeading>Contact Form</SubHeading>
-                <Paragraph>Fill out the form below and I will be in touch shortly!</Paragraph>
-                <StyledLabel>Name</StyledLabel>
-                <StyledInput placeholder='Your name' type="text" name="from_name" />
+  return (
+    <StyledContactContainer>
+      <StyledFormContainer ref={form} onSubmit={sendEmail}>
+        <SubHeading>Contact Form</SubHeading>
+        <Paragraph>Fill out the form below and I will be in touch shortly!</Paragraph>
+        <StyledLabel>Name</StyledLabel>
+        <StyledInput placeholder='Your name' type="text" name="from_name" />
 
-                <StyledLabel>Email</StyledLabel>
-                <StyledInput placeholder='Your email address' type="email" name="from_email" />
+        <StyledLabel>Email</StyledLabel>
+        <StyledInput placeholder='Your email address' type="email" name="from_email" />
 
-                <StyledLabel>How can I help you?</StyledLabel>
-                <StyledTextarea placeholder='Brief description of your inquiry' name="message" />
+        <StyledLabel>How can I help you?</StyledLabel>
+        <StyledTextarea placeholder='Brief description of your inquiry' name="message" />
 
-                <StyledSubmitButton type="submit" value="Send" />
-            </StyledFormContainer>
-        </StyledContactContainer>
-    );
+        <StyledSubmitButton type="submit" value="Send" />
+      </StyledFormContainer>
+    </StyledContactContainer>
+  );
 }
