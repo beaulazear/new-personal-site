@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { Container } from 'react-bootstrap';
 import styled from 'styled-components';
 import emailjs from '@emailjs/browser';
@@ -74,9 +74,17 @@ const Paragraph = styled.p`
 
 export default function Contact() {
   const form = useRef();
+  const [error, setError] = useState('');
 
   const sendEmail = (e) => {
     e.preventDefault();
+
+    const { from_name, from_email, message } = form.current;
+
+    if (!from_name.value || !from_email.value || !message.value) {
+      setError('Please fill out all fields.');
+      return;
+    }
 
     emailjs
       .sendForm('service_kqz5x4o', 'template_3ba6d27', form.current, '11CxjbisIoTlyftVb')
@@ -85,6 +93,7 @@ export default function Contact() {
           console.log(result.text);
           alert('Form submitted successfully!');
           form.current.reset(); // Reset the form
+          setError('');
         },
         (error) => {
           console.log(error.text);
@@ -108,6 +117,7 @@ export default function Contact() {
         <StyledTextarea placeholder='Brief description of your inquiry' name="message" />
 
         <StyledSubmitButton type="submit" value="Send" />
+        {error && <Paragraph style={{ color: 'red' }}>{error}</Paragraph>}
       </StyledFormContainer>
     </StyledContactContainer>
   );
