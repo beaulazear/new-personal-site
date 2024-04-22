@@ -171,6 +171,14 @@ const Programming = () => {
         <a style={modernButtonStyle} target="_blank" href="https://www.youtube.com/watch?v=VaLX3_oZhGc&feature=youtu.be">Video Demo</a>
       </ServiceCard>
       <ServiceCard>
+        <h2 style={h2Styles}>Pokemon Guide</h2>
+        <h3 style={h3Styles}>React, Javascript, HTML, CSS</h3>
+        <p style={pStyles}>Single page application built using React that sorts and displays data from <a href="https://pokeapi.co/">pokeapi.co</a>. Used as a quick reference for all pokemon. Styled with styled components.</p>
+        <a style={modernButtonStyle} target="_blank" href="https://beaulazear.github.io/pokemon/">Deployed Website Link</a>
+        <br />
+        <a style={modernButtonStyle} target="_blank" href="https://github.com/beaulazear/pokemon">Github Repository Link</a>
+      </ServiceCard>
+      <ServiceCard>
         <h2 style={h2Styles}>www.beaulazear.com</h2>
         <h3 style={h3Styles}>React, Javascript, HTML, CSS</h3>
         <p style={pStyles}>The website you are curerntly on! Single page application made with React and styled components. Email.js implemented for client inquiries.Made for marketing my business / providing information to new clients.</p>
@@ -215,7 +223,7 @@ const Programming = () => {
           <img src={WorkoutGif} alt="gif of this project" style={gifImageStyle} />
         </div>
         <br />
-        <a style={modernButtonStyle} target="_blank" href="https://github.com/beaulazear/react-sinatra-project">Front End Repository Link</a>
+        <a style={modernButtonStyle} target="_blank" href="https://github.com/beaulazear/react-sinatra-project">Github Repository Link</a>
         <br />
         <a style={modernButtonStyle} target="_blank" href="https://github.com/beaulazear/phase-3-sinatra-react-project">Database Repository Link</a>
       </ServiceCard>
