@@ -158,12 +158,12 @@ const Programming = () => {
       <ServiceCard>
         <h2 style={h2Styles}>Dog Walking Application</h2>
         <h3 style={h3Styles}>React, Ruby on Rails, HTML, CSS</h3>
-        <p style={pStyles}>Full stack application built with Ruby on Rails, and React. Uses AWS S3 for file storage. Utilized React Bootstrap & styled components for a unique style. Users can create an account, upload and store dog data, create appointments, view today's schedule, and view / edit invoices as walks are completed.</p>
-        <br />
+        <p style={pStyles}>This full-stack application, built with Ruby on Rails and React, lets you manage and track your dog walking services. Utilizing AWS S3 for file storage, it's great for storing pet information, scheduling walks, and tracking finances.</p>
+        {/* <br />
         <div style={gifContainerStyle}>
           <img src={DogWalkGif} alt="gif of this project" style={gifImageStyle} />
         </div>
-        <br />
+        <br /> */}
         <a style={modernButtonStyle} target="_blank" href="https://dog-walking-app.onrender.com">Deployed Website Link</a>
         <br />
         <a style={modernButtonStyle} target="_blank" href="https://github.com/beaulazear/dog-walking-app.git">Github Repository Link</a>
