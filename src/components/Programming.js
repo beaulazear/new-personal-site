@@ -164,11 +164,11 @@ const Programming = () => {
           <img src={DogWalkGif} alt="gif of this project" style={gifImageStyle} />
         </div>
         <br /> */}
+        <a style={modernButtonStyle} target="_blank" href="https://youtu.be/vGsZPkvNa5Y">Video Walkthrough</a>
+        <br />
         <a style={modernButtonStyle} target="_blank" href="https://dog-walking-app.onrender.com">Deployed Website Link</a>
         <br />
         <a style={modernButtonStyle} target="_blank" href="https://github.com/beaulazear/dog-walking-app.git">Github Repository Link</a>
-        <br />
-        <a style={modernButtonStyle} target="_blank" href="https://www.youtube.com/watch?v=VaLX3_oZhGc&feature=youtu.be">Video Demo</a>
       </ServiceCard>
       <ServiceCard>
         <h2 style={h2Styles}>Pokemon Guide</h2>
